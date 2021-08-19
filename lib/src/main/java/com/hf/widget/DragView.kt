@@ -79,9 +79,9 @@ constructor(
 
         if (lastX < 0f || lastY < 0f || lastX >= displayWidth || lastY >= displayHeight) {
             post {
-                var height = 0 //服务器返回的红包Y轴坐标偏移量
+                var height = 0
                 if (height == 0 || height == null) {
-                    if (type < 0) {//否则，不变换位置
+                    if (type < 0) {
                         x = 0f
                         y = (displayHeight / 2).toFloat()
                         mLastY = y
